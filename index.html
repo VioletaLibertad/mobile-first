@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
   <title>Mobile-First</title>
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Postales</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -27,15 +28,15 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#testimony">Testimonios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="#contactForm">Contacto</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <input class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
@@ -69,37 +70,96 @@
   </div>
 
   <!-- Testimonios -->
-  <div class="container-fluid">
-    <h4 class="mx-auto">Testimonios</h4>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm"></div>
-      <div class="col-sm-3">
-        <div class="card m-2">
-          <img class="card-img-top" src="asset/img/turist1.jpg" alt="Card image cap">
-          <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. </div>
+  <section>
+    <a id="testimony">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm"></div>
+          <div class="col-sm">
+            <h4 class="my-3 pt-5 text-center">Testimonios</h4>
+          </div>
+          <div class="col-sm"></div>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="card m-2">
-          <img class="card-img-top" src="asset/img/turist2.jpg" alt="Card image cap">
-          <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card m-2">
-          <img class="card-img-top" src="asset/img/turist3.jpg" alt="Card image cap">
-          <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. </div>
-        </div>
-      </div>
-      <div class="col-sm"></div>
-    </div>
-  </div>
 
+      <div class="container-fluid">
+        <div class="row mb-5">
+          <div class="col-sm">
+            <div class="card m-2">
+              <img class="card-img-top" src="asset/img/turist1.jpg" alt="Card image cap">
+              <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card m-2">
+              <img class="card-img-top" src="asset/img/turist2.jpg" alt="Card image cap">
+              <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card m-2">
+              <img class="card-img-top" src="asset/img/turist3.jpg" alt="Card image cap">
+              <div class="card-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section class="bg-info mt-3">
+    <a id="contactForm">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm"></div>
+          <div class="col-sm">
+            <h4 class="my-4 pt-2 text-center">Contáctanos</h4>
+          </div>
+          <div class="col-sm"></div>
+        </div>
+      </div>
+
+      <div class="container-fluid py-3">
+        <div class="row">
+          <div class="col-sm"></div>
+          <div class="col-sm-6">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con nadie mas.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Cuéntanos cómo te podemos ayudar</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+              </div>
+              <button type="submit" class="btn btn-light">Enviar</button>
+            </form>
+          </div>
+          <div class="col-sm"></div>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- Navbar Redes Sociales -->
+  <section>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand mx-auto"> 
+        <i class="fab fa-instagram px-3"></i>
+        <i class="fab fa-facebook-f px-3"></i>
+        <i class="fab fa-twitter px-3"></i>
+      </a>
+    </nav>
+  </section>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -108,7 +168,6 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-  <script src="asset/js/app.js"></script>
 </body>
 
 </html>
